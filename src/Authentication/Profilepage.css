@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.profile-container {
+  color: rgb(0, 0, 0);
+  max-width: 100%;
+  height: 100vh;
+  padding: 10px 20px;
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+/*   padding: 10px; */
+}
+.profile-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  background: linear-gradient(to right, #0acdb3, #ff03c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.profile-sub-heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0;
+}
+.profile-picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  padding: 2px;
+  background-color: #d0d3d757;
+}
+
+.profile-details {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: rgba(230, 230, 230, 0.656);
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.profile {
+  padding: 6px;
+}
+.profile strong {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+}
+.profile span {
+  margin-left: 2px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+}
+.higlight-username {
+  color: #6111b6;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+}
+.higlight-username:hover {
+  text-decoration-line: underline;
+}
+.details-heading {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(192, 187, 187, 0.551);
+}
+/* Preferences - Dark Mode Toggle */
+.settings {
+  margin-top: 10px;
+  padding: 10px;
+  background: #1d1c1c;
+  border-radius: 8px;
+  background-color: rgba(230, 230, 230, 0.656);
+}
+
+.dark-mode .settings {
+  background: #222;
+}
+
+.settings h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2f84a9;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.settings p {
+  font-size: 0.95rem;
+}
+
+.userprofile-input-field {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d3e2;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 50%;
+}
+
+.userprofile-input-field:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 6px rgba(0, 123, 255, 0.4);
+}
+.edit-icon {
+  cursor: pointer;
+  color: #007bff;
+  float: right;
+}
+
+
+.save-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.save-btn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-container {
+    height: auto;
+  }
+  .profile-details {
+    font-size: 1rem;
+  }
+  .details-heading {
+    font-size: 1.8rem;
+  }
+  .settings h3 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+  }
+}

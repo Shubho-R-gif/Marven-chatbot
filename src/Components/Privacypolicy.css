@@ -1,0 +1,50 @@
+/* Main container styling */
+.privacy-policy-page {
+  background-color: rgb(17, 20, 36);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Content box styling */
+.privacy-container {
+  max-width: 800px;
+  background: rgb(235, 232, 232);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.privacy-content h1 {
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.privacy-content h2 {
+  font-size: 22px;
+  color: #ce39d1;
+  margin-top: 20px;
+}
+
+/* Paragraph and list styles */
+.privacy-content p,
+.privacy-content li {
+  font-size: 20px;
+  font-weight: 500;
+  color: #551150;
+  line-height: 1.6;
+}
+
+/* List styling */
+.privacy-content ul {
+  padding-left: 20px;
+}
+
+.privacy-content li {
+  margin-bottom: 8px;
+}
