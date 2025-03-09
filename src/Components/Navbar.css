@@ -1,0 +1,82 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121122;
+  padding: 15px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Navbar heading with gradient text */
+.nav-heading {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background: linear-gradient(to right, #0acdb3, #ff03c4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+  margin: auto;
+  flex: none;
+  margin-left: 700px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.profile-icon-container {
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.profile-icon {
+  color: rgba(255, 255, 255, 0.727);
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 44px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 2;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background: #f4f4f4;
+}
+
+.dropdown-item a {
+  text-decoration-line: none;
+  color: #333;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .nav-heading {
+    margin-left: 0px;
+    /* margin: auto; */
+  }
+  .login-btn {
+    font-size: 0.8rem;
+    margin-right: 0px;
+  }
+}
