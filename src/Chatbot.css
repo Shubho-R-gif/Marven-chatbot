@@ -165,7 +165,7 @@
     font-size: 24px;
   }
   .mic-btn {
-    top: 91%;
+    top: 93%;
     left: 65%;
   }
   .chatBox {
@@ -195,6 +195,7 @@
     padding: 10px;
     margin: 6px;
     margin-top: 10px;
+    margin-bottom: 100px;
   }
   #send {
     padding: 14px 18px;
